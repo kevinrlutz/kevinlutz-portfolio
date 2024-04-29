@@ -36,6 +36,8 @@ module.exports = {
   ],
   devServer: {
     liveReload: true,
-    public: 'kevinlutz-portfolio-h5lmv.ondigitalocean.app'
+    allowedHosts: [
+      'kevinlutz-portfolio-h5lmv.ondigitalocean.app'
+    ]
   }
 }
