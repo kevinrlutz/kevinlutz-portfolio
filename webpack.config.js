@@ -35,6 +35,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    liveReload: true
+    liveReload: true,
+    public: 'kevinlutz-portfolio-h5lmv.ondigitalocean.app'
   }
 }
