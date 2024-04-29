@@ -1,0 +1,14 @@
+.nav-link {
+    color: var(--link-color);
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 1.1em;
+    padding-left: 1em;
+    font-size: 1.7em;
+    border-right: #1B4965 .1em solid;
+}
+
+.last-nav {
+    border: none;
+}

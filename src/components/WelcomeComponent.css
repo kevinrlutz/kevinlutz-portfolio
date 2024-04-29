@@ -1,0 +1,50 @@
+.welcome-component {
+    background-color: rgba(0, 0, 0, 0.6);
+    float: left;
+    margin-top: 7%;
+    margin-left: 10%;
+    width: 50%;
+    text-align: left;
+    padding: 1em;
+    border-radius: 1em;
+    position: relative;
+    box-shadow: 0 0 10px black;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.welcome-component * {
+    color: white;
+    margin: 0;
+}
+
+.portrait-img {
+    background-image: url('../images/header-img.webp');
+    background-size: contain;
+    margin-right: 11%;
+    pointer-events: none;
+    float: right;
+    width: 24em;
+    height: 24em;
+    margin-top: 5em;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+} 
+
+.welcome-component a {
+    text-decoration: underline;
+    text-decoration-color: #1EE6A3;
+}
+
+.welcome-component a:hover {
+    text-decoration: none;
+    background: #1EE6A3;
+    transition: .3s;
+    color: #003E60
+}
+
+@media screen and (max-width: 1600px) {
+    .portrait-img {
+        margin-right: 6%;
+    }
+}
