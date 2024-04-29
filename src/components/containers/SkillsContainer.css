@@ -1,0 +1,52 @@
+.skills-container {
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: auto;
+    max-width: 50%;
+}
+
+.side-margins {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.certs-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.certs-container a {
+    width: 20em;
+    margin: 1em;
+}
+
+.certs-container img {
+    width: 20em;
+}
+
+.hidden-certs {
+    display: none;
+}
+
+#moreCerts {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: .33em;
+    color: var(--body-color);
+    cursor: pointer;
+}

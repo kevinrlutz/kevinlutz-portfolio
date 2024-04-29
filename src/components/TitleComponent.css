@@ -1,0 +1,11 @@
+.title-component h1 {
+    margin: auto;
+    margin-left: .25em;
+    background: linear-gradient(#1EE6A3, #529DF2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 100%;
+    font-family: 'MomcakeBold';
+    font-size: 5em;
+    font-weight: 100;
+}

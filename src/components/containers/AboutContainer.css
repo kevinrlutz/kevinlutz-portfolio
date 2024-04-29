@@ -1,0 +1,8 @@
+.about-container {
+    background: url('../../images/borealis.webp') top center fixed;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    height: 35em;
+    background-size: 100% 41em;
+}
