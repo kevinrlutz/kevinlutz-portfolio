@@ -1,0 +1,31 @@
+.centered {
+    text-align: center;
+}
+
+.contact-container {
+    text-align: center;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.contact-container a {
+    font-weight: bold;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.contact-icons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 0.625em;
+    padding: 0.625em;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1rem;
+}
+
+.contact-icons div a img {
+    width: 2.5em;
+}

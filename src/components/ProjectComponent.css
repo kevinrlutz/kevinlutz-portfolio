@@ -1,0 +1,35 @@
+.project-component {
+    margin-bottom: 2em;
+    opacity: 1;
+    height: 100%;
+    transition: height 0ms 0ms, opacity 400ms 0ms;
+}
+
+*:is(.project-component, .hidden) a h3 {
+    font-size: 1.7em;
+    display: inline;
+    background-clip: border-box;
+    background: linear-gradient(#1EE6A3, #529DF2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+*:is(.project-component, .hidden) a {
+    text-decoration: none;
+}
+
+*:is(.project-component, .hidden) p {
+    margin-top: .5em;
+}
+
+.project-icons {
+    width: 1.3rem;
+    margin-right: .5em;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+}
