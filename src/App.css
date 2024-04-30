@@ -17,6 +17,10 @@ special gradient blue: #529DF2
   --opposite-header-color: #1EE6A3;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Amiko-Regular';
   src: url('./fonts/Amiko-Regular.eot') format('embedded-opentype'), url('./fonts/Amiko-Regular.woff') format('woff'), url('./fonts/Amiko-Regular.ttf') format('truetype'), url('./fonts/Amiko-Regular.svg#Amiko-Regular') format('svg');
@@ -55,4 +59,14 @@ h2 {
   font-size: 2.5em;
   margin-top: 1.5em;
   color: var(--header-color);
+}
+
+.side-margins {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
 }

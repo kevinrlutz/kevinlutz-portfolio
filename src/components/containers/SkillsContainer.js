@@ -77,7 +77,9 @@ class SkillsContainer extends React.Component {
                 <a className={this.state.hideCerts ? 'hidden-certs' : undefined} href="https://www.credly.com/badges/b18af136-2ae8-4c67-90cf-c5fe5f6e8764" target="_blank" rel='noreferrer'><img src={jsDsaCert} alt="JS DSA" /></a>
                 
             </div>
-            <button id="moreCerts" onClick={this.showMore}>{this.state.viewButtonText}</button>
+            <div className='centered'>
+                <button id="moreCerts" onClick={this.showMore}>{this.state.viewButtonText}</button>
+            </div>
         </div>
       )
   }

@@ -6,9 +6,9 @@ export default function NavContainer() {
   return (
     <div className='nav-container'>
         <NavLink linkTitle="ABOUT" linkRef="#"/>&nbsp;
-        <NavLink linkTitle="SKILLS" linkRef="#" />&nbsp;
-        <NavLink linkTitle="PROJECTS" linkRef="#" />&nbsp;
-        <NavLink linkTitle="CONTACT" linkRef="#" lastNav="true"/>
+        <NavLink linkTitle="SKILLS" linkRef="#skills" />&nbsp;
+        <NavLink linkTitle="PROJECTS" linkRef="#projects" />&nbsp;
+        <NavLink linkTitle="CONTACT" linkRef="#contact" lastNav="true"/>
     </div>
   )
 }
