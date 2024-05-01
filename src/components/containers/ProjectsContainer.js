@@ -118,7 +118,7 @@ export default class ProjectsContainer extends Component {
     return (
       <div className="projects-container">
         <div className="centered">
-          <p>
+          <p className='left-align-mobile side-margins'>
             Below you can find some examples of my work. Most are finished
             projects, but some are still works in progress.
           </p>

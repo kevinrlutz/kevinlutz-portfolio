@@ -45,3 +45,51 @@
     color: var(--body-color);
     cursor: pointer;
 }
+
+@media screen and (max-width: 1360px) {
+    .skills-container {
+        max-width: 65%;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .certs-container {
+        width: 100%;
+    }
+
+    .certs-container a {
+        width: 40vw;
+        margin: 0;
+    }
+
+    .certs-container img {
+        width: 35vw;
+        margin: 0;
+    }
+
+    .skills-container {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .certs-container {
+        width: 100%;
+    }
+
+    .certs-container a {
+        width: 50%;
+        margin: 0;
+    }
+
+    .certs-container img {
+        width: 45vw;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .skills-container img {
+        width: 4.2em;
+    }
+}

@@ -43,8 +43,43 @@
     color: #003E60
 }
 
+.mobile-header-img {
+    display: none;
+}
+
 @media screen and (max-width: 1600px) {
     .portrait-img {
         margin-right: 6%;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .welcome-component {
+        border-radius: 0;
+        float: none;
+        margin: auto;
+        text-align: left;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 90%;
+        box-shadow: none;
+        text-shadow: 2px 2px #000;
+        background: none;
+    }
+
+    .portrait-img {
+        display: none;
+        margin: 0;
+    }
+
+    .mobile-header-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10em;
+        border-radius: 50%;
+        margin-bottom: 1.5em;
+        margin-top: 1.1em;
+        box-shadow: 0 0 10px black;
     }
 }
