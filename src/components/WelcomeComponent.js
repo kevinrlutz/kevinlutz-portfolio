@@ -6,6 +6,7 @@ export default function WelcomeComponent() {
   return (
     <div>
         <div className='welcome-component'>
+          <img src={portraitImage} className='mobile-header-img' width={"100"} height={"175"} alt='' />
           <h1>Welcome!</h1>
           <br />
           <p>

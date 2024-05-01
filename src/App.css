@@ -17,8 +17,10 @@ special gradient blue: #529DF2
   --opposite-header-color: #1EE6A3;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -69,4 +71,44 @@ h2 {
 a {
   text-decoration: none;
   color: var(--link-color);
+}
+
+.theme-toggle {
+  background: #6c6c6c;
+  border: none;
+  padding: .45rem;
+  border-radius: 2em;
+  margin-top: 2.5em;
+  color: var(--bg-color);
+  height: fit-content;
+  width: fit-content;
+}
+
+.theme-toggle:hover {
+  background: #939393;
+}
+
+@media screen and (max-width: 1280px) {
+  .App-header {
+    display: block;
+  }
+
+  .side-margins {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .theme-toggle {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    margin-bottom: .25em;
+    justify-content: center;
+    width: 10em;
+}
+}
+@media screen and (max-width: 650px) {
+  .left-align-mobile {
+    text-align: left !important;
+  }
 }

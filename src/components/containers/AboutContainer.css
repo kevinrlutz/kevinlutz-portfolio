@@ -6,3 +6,11 @@
     height: 35em;
     background-size: 100% 41em;
 }
+
+@media screen and (max-width: 1360px) {
+    .about-container {
+        height: auto;
+        background-size: cover;
+        background-position: top left;
+    }
+}
