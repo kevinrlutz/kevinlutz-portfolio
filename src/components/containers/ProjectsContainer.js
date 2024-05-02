@@ -17,6 +17,14 @@ export default class ProjectsContainer extends Component {
     this.state = {
       projects: [
         {
+          name: 'This website!',
+          link: 'https://kevinlutz.me',
+          repoLink: 'https://github.com/kevinrlutz/kevinlutz-portfolio',
+          skillImages: [reactLogo, jsLogo],
+          description:
+            'I recently rebuilt the website that you are on using React (this site was previously vanilla HTML). This website not only serves as a home to my other projects, but is one of my largest projects in itself! In addition to the React rebuild, I also decided to switch to deploying and hosting with DigitalOcean instead of GitHub Pages. ',
+        },
+        {
           name: 'Appointment Management System',
           link: 'https://lutz-node-appt-manager.herokuapp.com/',
           repoLink: 'https://github.com/kevinrlutz/node-admin-service',
@@ -120,7 +128,8 @@ export default class ProjectsContainer extends Component {
         <div className="centered">
           <p className='left-align-mobile side-margins'>
             Below you can find some examples of my work. Most are finished
-            projects, but some are still works in progress.
+            projects, but some are still works in progress. Click on a project's 
+            title to check it out!
           </p>
         </div>
         <br />

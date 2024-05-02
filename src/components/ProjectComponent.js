@@ -12,7 +12,7 @@ export default class ProjectComponent extends Component {
             })}
             <h3>{this.props.name}</h3>
         </a>
-        <p>{this.props.repoLink && <a href={this.props.repoLink}>[GitHub Repo]&nbsp;</a>}{this.props.description}</p>
+        <p>{this.props.repoLink && <a href={this.props.repoLink}>[Link to GitHub Repo]&nbsp;</a>}{this.props.description}</p>
       </div>
     )
   }
