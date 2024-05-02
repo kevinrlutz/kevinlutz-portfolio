@@ -60,13 +60,13 @@ export default class App extends Component {
           <button className='theme-toggle' onClick={this.toggleTheme}>Toggle Theme</button>
         </header>
         <AboutContainer/>
-        <a id="skills"></a>
+        <div id="skills"></div>
         <SectionTitle sectionName="My Skills" />
         <SkillsContainer />
-        <a id="projects"></a>
+        <div id="projects"></div>
         <SectionTitle sectionName="Projects" />
         <ProjectsContainer />
-        <a id='contact'></a>
+        <div id='contact'></div>
         <SectionTitle sectionName="Contact Me" />
         <ContactContainer />
         <footer className='App-footer'>
