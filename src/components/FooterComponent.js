@@ -7,7 +7,7 @@ export default function FooterComponent() {
       <p>
         Created by&nbsp;
         <strong>
-          <a href="http://twitter.com/kevinrlutz">Kevin Lutz</a>
+          <a href="https://www.linkedin.com/in/kevinrlutz/">Kevin Lutz</a>
         </strong>
       </p>
       <p>&copy; 2024</p>
