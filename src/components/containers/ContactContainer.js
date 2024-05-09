@@ -20,27 +20,27 @@ export default function ContactContainer() {
       </div>
       <div className="contact-icons">
         <div>
-          <a href="https://github.com/kevinrlutz">
+          <a href="https://github.com/kevinrlutz" target='_blank' rel='noreferrer'>
             <img src={githubLogo} alt="Github" />
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/kevinrlutz/">
+          <a href="https://www.linkedin.com/in/kevinrlutz/" target='_blank' rel='noreferrer'>
             <img src={linkedinLogo} alt="LinkedIn" />
           </a>
         </div>
         <div>
-          <a href="https://leetcode.com/kevinrlutz/">
+          <a href="https://leetcode.com/kevinrlutz/" target='_blank' rel='noreferrer'>
             <img src={leetcodeLogo} alt="LeetCode" />
           </a>
         </div>
         <div>
-          <a href="https://codepen.io/kevinlutz/">
+          <a href="https://codepen.io/kevinlutz/" target='_blank' rel='noreferrer'>
             <img src={codepenLogo} alt="Codepen" />
           </a>
         </div>
         <div>
-          <a href="https://www.hackerrank.com/kevinlutz">
+          <a href="https://www.hackerrank.com/kevinlutz" target='_blank' rel='noreferrer'>
             <img src={hackerrankLogo} alt="HackerRank" />
           </a>
         </div>

@@ -65,7 +65,7 @@ export default class ProjectsContainer extends Component {
         },
         {
           name: 'Blackjack',
-          link: 'projects/blackjack/Blackjack.zip',
+          link: 'https://mega.nz/file/UKpSUTbT#Dc5VyOGMWsu359F0SAXyJ7S6HIbSScDnD5MMPRGHwDQ',
           repoLink: undefined,
           skillImages: [pythonLogo],
           description:
@@ -73,7 +73,7 @@ export default class ProjectsContainer extends Component {
         },
         {
           name: 'Password Generator',
-          link: 'projects/password-generator/Password-Generator.zip',
+          link: 'https://mega.nz/file/cHIHhJzZ#18S49YGTEwDJ1A6mrjG5FmfEW7VfMfpbR4IgKvnPK14',
           repoLink: undefined,
           skillImages: [pythonLogo],
           description: 'Simple password generator. My first Python project.',
@@ -87,20 +87,12 @@ export default class ProjectsContainer extends Component {
         },
         {
           name: 'Simple Puzzle Challenge Game ',
-          link: 'http://www.mediafire.com/file/3iqkzxwq5yb52pv/simple_challenges.zip',
+          link: 'https://mega.nz/file/4PgDCZxQ#V9kRFMAaBOfsHnBt4WwXeeDXwFXmVIr8z7npEOmF-8E',
           repoLink: undefined,
           skillImages: [unityLogo, csharpLogo],
           description:
             'Game me and a friend are making using the Unity game engine. Complete simple puzzles and movement-based challenges, similar to the Portal series. ',
-        },
-        {
-          name: 'Kettlebell Workout Timer',
-          link: 'projects/kettlebell-timer/kettlebell.html',
-          repoLink: undefined,
-          skillImages: [htmlLogo, cssLogo, jsLogo],
-          description:
-            'Kettlebell exercise timing app made with JavaScript. My mother needed an app to help track her kettlebell workouts, so I created this to fit her specifications. ',
-        },
+        }
       ],
       showMore: false,
       showMoreButtonText: '▼'
@@ -135,8 +127,6 @@ export default class ProjectsContainer extends Component {
         <br />
         <div className="side-margins">
           {this.state.projects.map((project, index) => {
-            console.log(project.name + '\'s index is ' + index)
-            console.log(this.state.showMore)
             return (
               <ProjectComponent
                 key={project.name}

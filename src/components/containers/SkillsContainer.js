@@ -56,8 +56,8 @@ class SkillsContainer extends React.Component {
                 <SkillComponent skillName="Spring" image={springLogo}/>
                 <SkillComponent skillName="JavaScript" image={jsLogo}/>
                 <SkillComponent skillName="Node.js" image={nodeLogo}/>
-                <SkillComponent skillName="Vue" image={vueLogo}/>
                 <SkillComponent skillName="React" image={reactLogo}/>
+                <SkillComponent skillName="Vue" image={vueLogo}/>
                 <SkillComponent skillName="HTML" image={htmlLogo}/>
                 <SkillComponent skillName="CSS" image={cssLogo}/>
             </div>
