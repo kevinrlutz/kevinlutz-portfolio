@@ -17,12 +17,12 @@ export default class ProjectsContainer extends Component {
     this.state = {
       projects: [
         {
-          name: 'This website!',
-          link: 'https://kevinlutz.me',
-          repoLink: 'https://github.com/kevinrlutz/kevinlutz-portfolio',
+          name: 'RJL Home Improvements Website',
+          link: 'https://rjlhomeimprovements.com/',
+          repoLink: 'https://github.com/kevinrlutz/rjlhomeimprovements',
           skillImages: [reactLogo, jsLogo],
           description:
-            'I recently rebuilt the website that you are on using React (this site was previously vanilla HTML). This website not only serves as a home to my other projects, but is one of my largest projects in itself! In addition to the React rebuild, I also decided to switch to deploying and hosting with DigitalOcean instead of GitHub Pages. ',
+            'Website for my father\'s home improvement company. Features a gallery of past projects, a contact form, and information about the company. Built with React and deployed on DigitalOcean.',
         },
         {
           name: 'Appointment Management System',
