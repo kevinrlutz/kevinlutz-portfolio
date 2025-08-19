@@ -17,6 +17,14 @@ export default class ProjectsContainer extends Component {
     this.state = {
       projects: [
         {
+          name: 'Open in Spotify for YouTube (Firefox Extension)',
+          link: 'https://addons.mozilla.org/en-US/firefox/addon/open-in-spotify-for-youtube/',
+          repoLink: 'https://github.com/kevinrlutz/yt-open-in-spotify',
+          skillImages: [jsLogo],
+          description:
+            'Firefox extension that adds a button to YouTube videos to open the currently playing song in Spotify.',
+        },
+        {
           name: 'RJL Home Improvements Website',
           link: 'https://rjlhomeimprovements.com/',
           repoLink: 'https://github.com/kevinrlutz/rjlhomeimprovements',
