@@ -17,6 +17,14 @@ export default class ProjectsContainer extends Component {
     this.state = {
       projects: [
         {
+          name: 'Local Acts',
+          link: 'https://local-acts-7z993.ondigitalocean.app/',
+          repoLink: 'https://github.com/kevinrlutz/local-acts',
+          skillImages: [reactLogo, nodeLogo, jsLogo],
+          description:
+            'A cross-platform mobile and web application that connects local talent and their fans. Discover musicians, bands, and comedians in your area, follow your favorites, and never miss a local show. Android and iOS apps coming soon! Built with React Native and Firebase.',
+        },
+        {
           name: 'Open in Spotify for YouTube (Firefox Extension)',
           link: 'https://addons.mozilla.org/en-US/firefox/addon/open-in-spotify-for-youtube/',
           repoLink: 'https://github.com/kevinrlutz/yt-open-in-spotify',
@@ -39,14 +47,6 @@ export default class ProjectsContainer extends Component {
           skillImages: [nodeLogo, jsLogo],
           description:
             'Node.js application used by an administrator who manages users and their associated appointments. Uses custom REST APIs to implement CRUD operations for users and appointments. Created with Node.js, Express, and MongoDB. Default username and password can be found in the GitHub repo.',
-        },
-        {
-          name: 'Pace Eats (Android)',
-          link: 'https://github.com/paceuniversity/cs389f2021team2',
-          repoLink: undefined,
-          skillImages: [javaLogo],
-          description:
-            'Android app used to track Calorie intake and carbon emissions associated with foods eaten (specifically at Pace University). Created with a team of 3 other students using Scrum agile methodology for CS389: Software Engineering course at Pace University. Built with Java, Android Studio, and Firebase.',
         },
         {
           name: 'Darts Scoreboard',
