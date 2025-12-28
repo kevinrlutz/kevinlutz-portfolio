@@ -49,6 +49,7 @@ html, body {
   background-color: var(--bg-color);
   display: grid;
   grid-template-columns: auto auto 7em;
+  align-items: center;
   color: var(--opposite-header-color);
   margin-bottom: .25em;
 }
@@ -73,19 +74,71 @@ a {
   color: var(--link-color);
 }
 
-.theme-toggle {
-  background: #6c6c6c;
-  border: none;
-  padding: .45rem;
-  border-radius: 2em;
-  margin-top: 2.5em;
-  color: var(--bg-color);
-  height: fit-content;
-  width: fit-content;
+/* Theme Toggle Slider */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
 }
 
-.theme-toggle:hover {
-  background: #939393;
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #6c6c6c;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5px;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider .icon {
+  font-size: 18px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.slider .sun {
+  color: #f1c40f;
+}
+
+.slider .moon {
+  color: #f1c40f;
 }
 
 @media screen and (max-width: 1280px) {
@@ -98,14 +151,9 @@ a {
     margin-right: 5%;
   }
 
-  .theme-toggle {
-    display: flex;
-    margin: auto;
-    align-content: center;
-    margin-bottom: .25em;
-    justify-content: center;
-    width: 10em;
-}
+  .theme-switch-wrapper {
+    margin: 1em auto;
+  }
 }
 @media screen and (max-width: 650px) {
   .left-align-mobile {
