@@ -9,6 +9,7 @@ import ProjectsContainer from './components/containers/ProjectsContainer';
 import SkillsContainer from './components/containers/SkillsContainer';
 
 import React, { Component } from 'react'
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 export default class App extends Component {
   constructor(props) {
@@ -57,7 +58,15 @@ export default class App extends Component {
         <header className="App-header">
           <TitleComponent/>
           <NavContainer/>
-          <button className='theme-toggle' onClick={this.toggleTheme}>Toggle Theme</button>
+          <div className="theme-switch-wrapper">
+            <label className="theme-switch" htmlFor="checkbox">
+              <input type="checkbox" id="checkbox" onChange={this.toggleTheme} checked={this.state.darkMode} />
+              <div className="slider">
+                <FaMoon className="icon moon" />
+                <FaSun className="icon sun" />
+              </div>
+            </label>
+          </div>
         </header>
         <AboutContainer/>
         <div id="skills"></div>
