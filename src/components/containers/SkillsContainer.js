@@ -2,6 +2,7 @@ import React from 'react'
 import SkillComponent from '../SkillComponent'
 import javaLogo from '../../images/java-logo.webp'
 import springLogo from '../../images/spring-logo.webp'
+import csharpLogo from '../../images/c-sharp-logo.webp'
 import jsLogo from '../../images/js-logo.webp'
 import nodeLogo from '../../images/node-logo.webp'
 import vueLogo from '../../images/vue-logo.webp'
@@ -54,6 +55,7 @@ class SkillsContainer extends React.Component {
             <div className='skills-container'>
                 <SkillComponent skillName="Java" image={javaLogo}/>
                 <SkillComponent skillName="Spring" image={springLogo}/>
+                <SkillComponent skillName="C#" image={csharpLogo}/>
                 <SkillComponent skillName="JavaScript" image={jsLogo}/>
                 <SkillComponent skillName="Node.js" image={nodeLogo}/>
                 <SkillComponent skillName="React" image={reactLogo}/>
