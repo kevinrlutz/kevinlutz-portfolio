@@ -13,20 +13,10 @@ export default function WelcomeComponent() {
           height={'175'}
           alt=''
         />
-        <h1>Welcome!</h1>
+        <h1>ABOUT ME</h1>
         <br />
         <p>
-          I am a software developer with a Bachelor of Science in Computer
-          Science from Pace University, graduating Cum Laude in 2022. I have
-          experience working with a variety of programming languages, including
-          Java, JavaScript, and TypeScript, and I am skilled in using frameworks
-          like Spring Boot, React, and Angular. My technical expertise extends
-          across full-stack development, cloud technologies, and agile
-          methodologies. I have also developed personal projects, such as a
-          full-stack appointment management system and an Android app for
-          tracking calories and carbon footprints, which have allowed me to
-          refine my problem-solving and teamwork skills. Feel free to{' '}
-          <a href='#contact'>contact me</a> to discuss potential projects.
+          Full-stack software engineer based in New York with over three years of experience building scalable, cloud-native applications in enterprise environments. Holds a Bachelor of Science in Computer Science from Pace University, graduating Cum Laude in 2022. Core technical proficiencies include Java, C#/.NET, React, Node.js, and modern microservice architectures. Demonstrated success in modernizing legacy systems, automating workflows, and leading cross-functional development initiatives. Recognized for technical leadership, strong client collaboration, and delivering measurable business impact in Agile environments. Open to discussing potential projects.
         </p>
       </div>
       <img className='portrait-img' src={portraitImage} alt='Portrait of me' />
