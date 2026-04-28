@@ -30,22 +30,6 @@
     width: 20em;
 }
 
-.hidden-certs {
-    display: none;
-}
-
-#moreCerts {
-    border: none;
-    background: none;
-    font-size: 1.2em;
-    padding-left: .5em;
-    padding-top: .5em;
-    padding-right: .5em;
-    padding-bottom: .33em;
-    color: var(--body-color);
-    cursor: pointer;
-}
-
 @media screen and (max-width: 1360px) {
     .skills-container {
         max-width: 65%;

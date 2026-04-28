@@ -1,12 +1,11 @@
 import './App.css';
 import FooterComponent from './components/FooterComponent';
 import SectionTitle from './components/SectionTitle';
-import TitleComponent from './components/TitleComponent';
 import AboutContainer from './components/containers/AboutContainer';
 import ContactContainer from './components/containers/ContactContainer';
-import NavContainer from './components/containers/NavContainer';
 import ProjectsContainer from './components/containers/ProjectsContainer';
 import SkillsContainer from './components/containers/SkillsContainer';
+import StaggeredMenu from './components/StaggeredMenu';
 
 import React, { Component } from 'react'
 import { FaSun, FaMoon } from 'react-icons/fa';
@@ -53,21 +52,47 @@ export default class App extends Component {
   }
   
   render() {
+    const menuItems = [
+      { label: 'About', ariaLabel: 'Go to about section', link: '#' },
+      { label: 'Skills', ariaLabel: 'Go to skills section', link: '#skills' },
+      { label: 'Projects', ariaLabel: 'Go to projects section', link: '#projects' },
+      { label: 'Contact', ariaLabel: 'Go to contact section', link: '#contact' },
+    ];
+
+    const menuButtonColor = this.state.darkMode ? '#1EE6A3' : '#003E60';
+    const accentColor = this.state.darkMode ? '#1EE6A3' : '#003E60';
+    const colors = this.state.darkMode ? ['#1EE6A3', '#003E60'] : ['#5FA8D3', '#003E60'];
+
     return (
       <div className="App">
-        <header className="App-header">
-          <TitleComponent/>
-          <NavContainer/>
-          <div className="theme-switch-wrapper">
-            <label className="theme-switch" htmlFor="checkbox">
-              <input type="checkbox" id="checkbox" onChange={this.toggleTheme} checked={this.state.darkMode} />
-              <div className="slider">
-                <FaMoon className="icon moon" />
-                <FaSun className="icon sun" />
-              </div>
-            </label>
-          </div>
-        </header>
+        <div className="staggered-menu-container">
+          <StaggeredMenu
+            position="right"
+            items={menuItems}
+            displaySocials={false}
+            displayItemNumbering={true}
+            menuButtonColor={menuButtonColor}
+            openMenuButtonColor={menuButtonColor}
+            changeMenuColorOnOpen={true}
+            colors={colors}
+            accentColor={accentColor}
+            closeOnClickAway={true}
+            themeToggle={
+              <label className="theme-switch" htmlFor="menu-theme-checkbox">
+                <input
+                  type="checkbox"
+                  id="menu-theme-checkbox"
+                  onChange={this.toggleTheme}
+                  checked={this.state.darkMode}
+                />
+                <div className="slider">
+                  <FaMoon className="icon moon" />
+                  <FaSun className="icon sun" />
+                </div>
+              </label>
+            }
+          />
+        </div>
         <AboutContainer/>
         <div id="skills"></div>
         <SectionTitle sectionName="My Skills" />

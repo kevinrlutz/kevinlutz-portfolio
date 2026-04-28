@@ -13,6 +13,11 @@
     color: white;
 }
 
+.welcome-component h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
 .welcome-component * {
     color: white;
     margin: 0;

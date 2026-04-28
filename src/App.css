@@ -45,17 +45,14 @@ html, body {
    color: var(--body-color);
 }
 
-.App-header {
-  background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: auto auto 7em;
-  align-items: center;
-  color: var(--opposite-header-color);
-  margin-bottom: .25em;
-}
-
-.App-link {
-  color: #61dafb;
+.staggered-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  pointer-events: none;
 }
 
 h2 {
@@ -94,7 +91,7 @@ a {
 }
 
 .slider {
-  background-color: #6c6c6c;
+  background-color: var(--bg-color);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -110,7 +107,7 @@ a {
 }
 
 .slider:before {
-  background-color: #fff;
+  background-color: var(--header-color);
   bottom: 4px;
   content: "";
   height: 26px;
@@ -142,10 +139,6 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 1280px) {
-  .App-header {
-    display: block;
-  }
-
   .side-margins {
     margin-left: 5%;
     margin-right: 5%;

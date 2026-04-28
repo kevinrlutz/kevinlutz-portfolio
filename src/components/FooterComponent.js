@@ -10,7 +10,7 @@ export default function FooterComponent() {
           <a href="https://www.linkedin.com/in/kevinrlutz/">Kevin Lutz</a>
         </strong>
       </p>
-      <p>&copy; 2025</p>
+      <p>&copy; {new Date().getFullYear()}</p>
     </div>
   )
 }
