@@ -59,10 +59,6 @@ export default class App extends Component {
       { label: 'Contact', ariaLabel: 'Go to contact section', link: '#contact' },
     ];
 
-    const menuButtonColor = this.state.darkMode ? '#1EE6A3' : '#003E60';
-    const accentColor = this.state.darkMode ? '#1EE6A3' : '#003E60';
-    const colors = this.state.darkMode ? ['#1EE6A3', '#003E60'] : ['#5FA8D3', '#003E60'];
-
     return (
       <div className="App">
         <div className="staggered-menu-container">
@@ -71,14 +67,14 @@ export default class App extends Component {
             items={menuItems}
             displaySocials={false}
             displayItemNumbering={true}
-            menuButtonColor={menuButtonColor}
-            openMenuButtonColor={menuButtonColor}
+            menuButtonColor="#ffffff"
+            openMenuButtonColor="#ffffff"
             changeMenuColorOnOpen={true}
-            colors={colors}
-            accentColor={accentColor}
+            colors={['#FFFFFF', '#1EE6A3', '#1B4965', '#003E60']}
+            accentColor="#1EE6A3"
             closeOnClickAway={true}
             themeToggle={
-              <label className="theme-switch" htmlFor="menu-theme-checkbox">
+              <label className="theme-switch menu-theme-switch" htmlFor="menu-theme-checkbox">
                 <input
                   type="checkbox"
                   id="menu-theme-checkbox"
